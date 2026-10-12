@@ -1,0 +1,34 @@
+{
+  "name": "@red-cup-engineering/trading-belief-service",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "The belief record type and belief-to-capital algebra from PERSONAL-QUANT-PLATFORM-THEORY.md: a principal's revisable, falsifier-bearing belief distinct from observation/forecast/valuation/policy/order-intent, the decomposed belief-edge formula, and metrologic bilattice belief-vs-evidence fusion.",
+  "exports": {
+    ".": "./src/belief-record.mjs",
+    "./belief-record": "./src/belief-record.mjs",
+    "./belief-edge": "./src/belief-edge.mjs",
+    "./evidence-fusion": "./src/evidence-fusion.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "check": "node --check src/belief-record.mjs && node --check src/belief-edge.mjs && node --check src/evidence-fusion.mjs && node --check src/internal/validators.mjs && node --check scripts/evaluate-belief-edge.mjs && node --check scripts/fuse-belief-with-evidence.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/metrologic": "workspace:*",
+    "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/computer-data-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/signcell": "workspace:*",
+    "@red-cup-engineering/signchain": "workspace:*"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "src/",
+    "scripts/",
+    "test/",
+    "package.json"
+  ],
+  "license": "UNLICENSED"
+}
