@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "type": "module",
   "description": "The belief record type and belief-to-capital algebra from PERSONAL-QUANT-PLATFORM-THEORY.md: a principal's revisable, falsifier-bearing belief distinct from observation/forecast/valuation/policy/order-intent, the decomposed belief-edge formula, and metrologic bilattice belief-vs-evidence fusion.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/financial-engineering-services-section.git",
+    "directory": "services/strategy-evaluation-services-section/services/trading-belief-service"
+  },
   "exports": {
     ".": "./src/belief-record.mjs",
     "./belief-record": "./src/belief-record.mjs",
